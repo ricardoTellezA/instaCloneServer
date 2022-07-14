@@ -5,7 +5,7 @@ const awsUploadImage = require("../utils/aws-upload-image");
 const bcryptjs = require("bcryptjs");
 
 
-function createToken(user, SECRET_KEY, expiresIn) {
+function createToken(user, SECRET_KEY) {
   const { id, name, email, username } = user;
   const payload = {
     id,
